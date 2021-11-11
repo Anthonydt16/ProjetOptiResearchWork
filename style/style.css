@@ -1,0 +1,45 @@
+.header{
+	background-color: #000000;
+}
+nav.menuPrincipal{
+	text-align: center;
+	background-color:#000000;
+	font-size: 0px;
+}
+
+nav.menuPrincipal ul {
+	display:  inline;
+	list-style: none;
+	padding: 0px;
+ 	margin: 0px;
+	font-family: Helvetica;
+}
+
+nav.menuPrincipal ul li {
+	display: table-cell;
+	text-align: center;
+	width: 140px;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+
+}
+
+nav.menuPrincipal ul li a {
+  text-decoration: none;
+  color: white;
+  animation-duration: 1s;
+  animation-name: glissade;
+  transition: color 2s;
+
+}
+
+nav.menuPrincipal ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+nav.menuPrincipal ul li.actif {
+  	background-color: ivory;
+  	color: black;
+  	padding: 10px;
+}
