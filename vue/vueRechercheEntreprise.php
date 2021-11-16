@@ -7,7 +7,7 @@ include_once ('vue/vueHaut.php');
 <div class="conteneur">
   <?php
       $formulaireRecherche->afficherFormulaire();
-      echo $_SESSION['id'];
+
   ?>
     <button class ="btn btn-light btn-lg btn-block" onclick="validation()">afficher le resultat</button>
 
@@ -43,23 +43,26 @@ function showPosition(position)
   }
 
 function reception(latitude,longitude) {
-  //recuperation de la geolocation
-  console.log(latitude);
-  console.log(longitude);
   // recuperation des variable du form
   var sessionPerimetre = "<?php echo $_SESSION['perimetre']; ?>";
   var sessionMetier = "<?php echo $_SESSION['metier']; ?>";
   var sessionCodePostal = "<?php echo $_SESSION['codePostal']; ?>";
-  if(sessionPerimetre != null){
-    console.log(sessionPerimetre);
-    console.log(sessionMetier);
+  if(sessionCodePostal != null){
     console.log(sessionCodePostal);
+    requete(sessionCodePostal, sessionMetier, sessionPerimetre,null,null);
+  }else {
+    if(sessionPerimetre != null){
+      console.log(sessionPerimetre);
+      console.log(sessionMetier);
+      console.log(sessionCodePostal);
 
-    requete(sessionCodePostal, sessionMetier, sessionPerimetre,latitude,longitude);
+      requete(sessionCodePostal, sessionMetier, sessionPerimetre,latitude,longitude);
+    }
+    else{
+      console.log("c'est null");
+    }
   }
-  else{
-    console.log("c'est null");
-  }
+
 }
 
   </script>
