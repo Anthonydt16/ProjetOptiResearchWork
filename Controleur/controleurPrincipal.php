@@ -9,13 +9,17 @@ $bioRelai->ajouterComposant($bioRelai->creerItemLien("Recherche Entreprise", "Re
 $bioRelai->creerMenu('ORWMenu','ORW');
 if(isset($_GET['ORW'])){
   $_SESSION['ORW'] = $_GET['ORW'];
-  echo  $_GET['ORW'];
-  include_once dispatcher::dispatch($_SESSION['ORW']);
 }else{
-  include_once dispatcher::dispatch('Accueil');
+$_SESSION['ORW']="Accueil";
+
 }
 
+if(isset($_POST['envoieFRecherche'])){
+    $_SESSION['ORW']="RechercheEntreprise";
 
+  }
+echo $_SESSION['ORW'];
 
+  include_once dispatcher::dispatch($_SESSION['ORW']);
 
  ?>

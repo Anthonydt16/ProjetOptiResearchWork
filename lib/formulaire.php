@@ -140,8 +140,11 @@ public function creerInputDescription($unNom, $unId, $uneValue , $required , $pl
 		return $composant;
 	}
 
-	public function creerInputSubmit($unNom, $unId, $uneValue, $class){
+	public function creerInputSubmit($unNom, $unId, $uneValue, $class,$onclick){
 		$composant = "<input  class='".$class."' type = 'submit'  class='btn btn-primary btn-lg btn-block' name = '" . $unNom . "' id = '" . $unId . "' ";
+		if (!empty($onclick)){
+			$composant .= "onclick = '" . $onclick . "' ";
+		}
 		$composant .= "value = '" . $uneValue . "'/> ";
 		return $composant;
 
