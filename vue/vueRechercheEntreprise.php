@@ -7,7 +7,6 @@ include_once ('vue/vueHaut.php');
 <div class="conteneur">
   <?php
       $formulaireRecherche->afficherFormulaire();
-
   ?>
     <button class ="btn btn-light btn-lg btn-block" onclick="validation()">afficher le resultat</button>
 
@@ -47,16 +46,16 @@ function reception(latitude,longitude) {
   var sessionPerimetre = "<?php echo $_SESSION['perimetre']; ?>";
   var sessionMetier = "<?php echo $_SESSION['metier']; ?>";
   var sessionCodePostal = "<?php echo $_SESSION['codePostal']; ?>";
-  if(sessionCodePostal != null){
+  if(sessionCodePostal){
     console.log(sessionCodePostal);
-    requete(sessionCodePostal, sessionMetier, sessionPerimetre,null,null);
+    console.log(sessionMetier);
+    requeteDepartement(sessionCodePostal, sessionMetier);
   }else {
-    if(sessionPerimetre != null){
+    if(sessionPerimetre){
       console.log(sessionPerimetre);
       console.log(sessionMetier);
-      console.log(sessionCodePostal);
 
-      requete(sessionCodePostal, sessionMetier, sessionPerimetre,latitude,longitude);
+      requeteLocalisation(sessionMetier, sessionPerimetre,latitude,longitude);
     }
     else{
       console.log("c'est null");

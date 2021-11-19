@@ -3,7 +3,7 @@ $messageErreurConnexion = "erreur de connexion !";
 $formulaireRecherche = new Formulaire('post', 'index.php', 'FRecherche', 'FRecherche');
 
 $formulaireRecherche->ajouterComposantLigne($formulaireRecherche->creerLabel('code postal :',"label"));
-$formulaireRecherche->ajouterComposantLigne($formulaireRecherche->creerInputTexte('codePostal', 'codePostal', '', 1, 'Entrez le code postal', '',"form-control"));
+$formulaireRecherche->ajouterComposantLigne($formulaireRecherche->creerInputTexte('codePostal', 'codePostal', '', 0, 'Entrez le code postal', '',"form-control"));
 $formulaireRecherche->ajouterComposantTab();
 
 
@@ -13,7 +13,7 @@ $formulaireRecherche->ajouterComposantTab();
 
 
 $formulaireRecherche->ajouterComposantLigne($formulaireRecherche->creerLabel('Périmètre du rayon de recherche  :',"label"));
-$formulaireRecherche->ajouterComposantLigne($formulaireRecherche->creerInputTexte('Perimetre', 'Perimetre', '', 1, 'Entrez votre Périmètre du rayon de recherche', '',"form-control"));
+$formulaireRecherche->ajouterComposantLigne($formulaireRecherche->creerInputTexte('Perimetre', 'Perimetre', '', 0, 'Entrez votre Périmètre du rayon de recherche', '',"form-control"));
 $formulaireRecherche->ajouterComposantTab();
 
 
@@ -26,7 +26,27 @@ $formulaireRecherche->ajouterComposantTab();
 $formulaireRecherche->creerFormulaire();
 
 if(!empty($_POST['envoieFRecherche'])){
-  echo "fini";
+  
+  // if(!empty($_POST['metier'])){
+  //   $_SESSION['metier'] = $_POST['metier'];
+  // }
+  // else{
+  //   $_SESSION['metier'] ="";
+  // }
+  //
+  // if(!empty($_POST['Perimetre'])){
+  //   $_SESSION['Perimetre'] = $_POST['Perimetre'];
+  // }
+  // else{
+  //   $_SESSION['Perimetre'] ="";
+  // }
+  //
+  // if(!empty($_POST['codePostal'])){
+  //   $_SESSION['codePostal'] = $_POST['codePostal'];
+  // }
+  // else{
+  //   $_SESSION['codePostal'] ="";
+  // }
 
   $_SESSION['metier'] = $_POST['metier'];
   $_SESSION['perimetre'] = $_POST['Perimetre'];
