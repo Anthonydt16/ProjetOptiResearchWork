@@ -13,7 +13,7 @@ session_start();?>
 @import url(style/style.css);
 </style>
 </head>
-<body class="bg-secondary">
+<body >
 
 
 

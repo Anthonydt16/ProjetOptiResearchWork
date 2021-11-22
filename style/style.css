@@ -1,9 +1,15 @@
 .header{
-	background-color: #000000;
+	background-color: #6B4F4F;
+}
+body{
+	background-color: #483434;
+}
+.conteneur{
+	background-color: #EED6C4;
 }
 nav.menuPrincipal{
 	text-align: center;
-	background-color:#000000;
+	background-color:#6B4F4F;
 	font-size: 0px;
 }
 
@@ -42,4 +48,8 @@ nav.menuPrincipal ul li.actif {
   	background-color: ivory;
   	color: black;
   	padding: 10px;
+}
+footer{
+	background-color: #6B4F4F;
+	font-size: 10px!important;
 }
