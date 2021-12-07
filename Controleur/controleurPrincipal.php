@@ -18,7 +18,6 @@ if(isset($_POST['envoieFRecherche'])){
     $_SESSION['ORW']="RechercheEntreprise";
 
   }
-echo $_SESSION['ORW'];
 
   include_once dispatcher::dispatch($_SESSION['ORW']);
 

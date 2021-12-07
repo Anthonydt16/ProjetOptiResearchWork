@@ -149,6 +149,12 @@ public function creerInputDescription($unNom, $unId, $uneValue , $required , $pl
 		return $composant;
 
 	}
+	public function creerInputRange($unNom, $unId,$min, $max, $class){
+		$composant = "<input type='range' id='".$unNom."' name='".$unNom."' min='".$min."' max='".$max."'>";
+		return $composant;
+
+	}
+
 	public function creerInputHidden($unNom, $unId, $uneValue){
 		$composant= "<input type ='hidden' name = '" . $unNom . "' id = '" . $unId . "' value = '" . $uneValue . "' />";
 		return $composant;

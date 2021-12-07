@@ -1,29 +1,34 @@
 <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">localisation</h4>
-                        <p class="lead mb-0">
-                            Nouvelle Aquitiane
-                            <br />
-                            France
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">me suivre</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/Gogodix2"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://fr.linkedin.com/in/anthony-douat-a2118b195"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">Info</h4>
-                        <p class="lead mb-0">
-                            Site développer pour presenter mes differents projets.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+<!-- Footer -->
+<footer class="text-center text-white">
+<!-- Grid container -->
+<div class="container p-4">
+
+<!-- Section: Social media -->
+<section class="mb-4">
+
+<!-- Twitter -->
+<a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="https://twitter.com/gogodix2" role="button"><i class="fab fa-twitter"></i></a>
+
+<!-- Linkedin -->
+<a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="https://fr.linkedin.com/in/anthony-douat-a2118b195" role="button"><i class="fab fa-linkedin-in"></i></a>
+<!-- Github -->
+<a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="https://github.com/Anthonydt16" role="button"><i class="fab fa-github"></i></a>
+</section>
+<!-- Section: Social media -->
+
+
+
+
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+© 2021 Copyright:
+<a class="text-white" href="">Anthony Douat</a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->

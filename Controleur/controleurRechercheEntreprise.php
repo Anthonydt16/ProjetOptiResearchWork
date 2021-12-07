@@ -13,7 +13,7 @@ $formulaireRecherche->ajouterComposantTab();
 
 
 $formulaireRecherche->ajouterComposantLigne($formulaireRecherche->creerLabel('Périmètre du rayon de recherche  :',"label"));
-$formulaireRecherche->ajouterComposantLigne($formulaireRecherche->creerInputTexte('Perimetre', 'Perimetre', '', 0, 'Entrez votre Périmètre du rayon de recherche', '',"form-control"));
+$formulaireRecherche->ajouterComposantLigne($formulaireRecherche->creerInputRange('Perimetre', 'Perimetre',1, 1000, 'form-range'));
 $formulaireRecherche->ajouterComposantTab();
 
 
@@ -26,7 +26,7 @@ $formulaireRecherche->ajouterComposantTab();
 $formulaireRecherche->creerFormulaire();
 
 if(!empty($_POST['envoieFRecherche'])){
-  
+
   // if(!empty($_POST['metier'])){
   //   $_SESSION['metier'] = $_POST['metier'];
   // }

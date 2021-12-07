@@ -8,10 +8,10 @@ include_once ('vue/vueHaut.php');
   <?php
       $formulaireRecherche->afficherFormulaire();
   ?>
-    <button class ="btn btn-light btn-lg btn-block" onclick="validation()">afficher le resultat</button>
+    <button id="buttonAffichage" class ="btn btn-light btn-lg btn-block" onclick="validation()">afficher le resultat</button>
 
   <div id="res"></div>
-  <div id="tableRep">"
+  <div id="tableRep">
   </div>
 
 </div>
